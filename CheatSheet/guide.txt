@@ -1,0 +1,31 @@
+##Workbook
+jupyter lab
+
+#libraries
+import pandas as pd
+from matplotlib import pyplot as plt
+%matplotlib inline
+
+##Functions
+df = pd.read_csv
+
+##Exploratory Data Analysis (EDA) with pd
+head() - returns first five observations of the data set.
+tail() - returns last five observations of the data set.
+shape() - ret (observations,characteristics) i.e, (row,col)
+          n-1 col = independent variables
+info() - ret data types, non-Null values count (which gives null/missing values count).
+describe() - ret summary of various statistics.
+             count, mean, standard deviation, minimum and maximum values and the quantiles of the data.
+             min to max values shows the ascending order (min, 25%, 50%, 75%, max) of data col, 
+             50% is median value.
+             Observe difference of val between min and max range and if there any high diff and there
+             is outliers in the dataset.
+tarVar.value_counts() - score/count in descending order based on categories
+                        *Target variable/Dependent variable is discrete and categorical in nature
+df.corr() - 
+df.target.value_counts() - returns the total count of each catogorical data
+##pandas
+groupby() - function is used to split the data into groups based on some criteria
+crosstab
+apply() - function is passed as arg, the functionn will be applied to pandas series/data
